@@ -1,0 +1,103 @@
+# ============================================
+#           PlusArena - Configuração
+# ============================================
+
+# Cooldown do comando /arena sair (em segundos)
+sair-cooldown: 10
+
+# Impedir jogadores de sair da região da arena
+# Se true, jogadores que tentarem sair serão empurrados de volta
+impedir-saida: true
+
+# Mensagem enviada ao jogador quando ele não pode sair da arena
+mensagem-saida-bloqueada: "&cVocê não pode sair da arena! Use &e/arena sair&c."
+
+# ============================================
+#         Comandos permitidos na arena
+# ============================================
+# Lista de comandos que podem ser usados dentro da arena
+# Escreva sem a barra, em minúsculo (ex: arena sair)
+comandos-permitidos:
+  - "arena sair"
+  - "arena"
+
+# ============================================
+#              Localizações
+# ============================================
+spawn:
+  world: world
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+respawn:
+  world: world
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+pos1:
+  world: world
+  x: -10
+  y: 60
+  z: -10
+
+pos2:
+  world: world
+  x: 10
+  y: 80
+  z: 10
+
+# ============================================
+#                   Kit
+# ============================================
+# Itens do kit que o jogador recebe ao entrar na arena
+# Slots: 0-8 = hotbar, 9-35 = inventário, 36=boots, 37=leggings, 38=chestplate, 39=helmet
+kit:
+  helmet:
+    material: DIAMOND_HELMET
+    enchantments:
+      PROTECTION: 4
+      UNBREAKING: 3
+  chestplate:
+    material: DIAMOND_CHESTPLATE
+    enchantments:
+      PROTECTION: 4
+      UNBREAKING: 3
+  leggings:
+    material: DIAMOND_LEGGINGS
+    enchantments:
+      PROTECTION: 4
+      UNBREAKING: 3
+  boots:
+    material: DIAMOND_BOOTS
+    enchantments:
+      PROTECTION: 4
+      UNBREAKING: 3
+      FEATHER_FALLING: 4
+  items:
+    - slot: 0
+      material: DIAMOND_SWORD
+      enchantments:
+        SHARPNESS: 5
+        UNBREAKING: 3
+        LOOTING: 3
+    - slot: 1
+      material: BOW
+      enchantments:
+        POWER: 5
+        UNBREAKING: 3
+        INFINITY: 1
+    - slot: 2
+      material: GOLDEN_APPLE
+      amount: 8
+    - slot: 3
+      material: ENDER_PEARL
+      amount: 16
+    - slot: 9
+      material: ARROW
+      amount: 1

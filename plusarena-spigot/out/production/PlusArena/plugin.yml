@@ -1,0 +1,27 @@
+name: PlusArena
+version: 1.0.0
+main: com.plusarena.PlusArena
+api-version: 1.21
+author: eojoaodev
+website: obitouchiha.cloud
+
+commands:
+  arena:
+    description: Comandos da arena PvP
+    usage: /arena [sair|wand]
+  arenasetspawn:
+    description: Define o spawn da arena (entrada)
+    usage: /arenasetspawn
+    permission: plusarena.admin
+  arenasetrespawn:
+    description: Define o respawn da arena (saída/morte)
+    usage: /arenasetrespawn
+    permission: plusarena.admin
+
+permissions:
+  plusarena.admin:
+    description: Permissão de administrador da arena
+    default: op
+  plusarena.use:
+    description: Permissão para usar a arena
+    default: true
